@@ -143,7 +143,7 @@ namespace Project_Silver_LadyBug
             }
             foreach (LocalGraphNode element in root.children) {
 
-                if (toBePlaced.groupID == element.group && toBePlaced.type == "AND") {
+                if (toBePlaced.groupID == element.group && toBePlaced.type == "dAND") {
                     LocalGraphNode placement = new LocalGraphNode();
                     placement.group = toBePlaced.groupID;
                     placement.departmentID = toBePlaced.prereqDepartmentID;
