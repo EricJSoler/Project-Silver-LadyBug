@@ -46,6 +46,7 @@
     <Compile Include="GraphNode.cs" />
     <Compile Include="LocalGraphNode.cs" />
     <Compile Include="Match.cs" />
+    <Compile Include="Output.cs" />
     <Compile Include="PreReq.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

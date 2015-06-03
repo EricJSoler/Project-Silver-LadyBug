@@ -24,13 +24,17 @@ namespace Project_Silver_LadyBug
             quarter.Add("Winter");
             quarter.Add("Spring");
             SQLHANDLER.start();
+            Output final = new Output();
             PreReq pre = new PreReq();
             //Graph graph = new Graph();
             List<List<Match>> all = new List<List<Match>>();
             List<Course> qual;   
             string x;
             int i = 0;
+            int year = 0;
             do {
+                if(i%3==0)
+                    year++;
                 TimeFilter time = new TimeFilter();
                 qual = pre.getQualifiedCourses();
                 //string message = "QualifiedFor: in qtr " + i.ToString();
@@ -45,7 +49,7 @@ namespace Project_Silver_LadyBug
                 List<Match> recomended = time.buildMyScheduleFor(qual, quarter[i%3], 3);
                 all.Add(recomended);
                 pre.updateCompleted(recomended);
-
+                final.addToOutput(quarter[i % 3], recomended, year);
                 string message1 = "Recommended: " + i.ToString();
                 Console.WriteLine(message1);
                 foreach(Match element in recomended)
@@ -55,14 +59,13 @@ namespace Project_Silver_LadyBug
                     Console.Write(" ");
                     Console.WriteLine(element.numberID);
                 }
-                if(i==7)
-                Console.WriteLine("Press 'q' to quit");
+              
                // x = Console.ReadLine();
                 i++;
                 if (i > 10)
                     Console.WriteLine();
             } while (!(pre.amIDone()));
-            
+            final.finalizeOutput();
             Console.WriteLine("sdf");
 
         }
