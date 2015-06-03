@@ -59,7 +59,9 @@ namespace Project_Silver_LadyBug
                 Console.WriteLine("Press 'q' to quit");
                // x = Console.ReadLine();
                 i++;
-            } while (i<10);
+                if (i > 10)
+                    Console.WriteLine();
+            } while (!(pre.amIDone()));
             
             Console.WriteLine("sdf");
 

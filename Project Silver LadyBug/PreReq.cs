@@ -21,6 +21,7 @@ namespace Project_Silver_LadyBug
             program = "AAS-Pre-Engineering-MCAIMS";
             subjectRequirements = new Dictionary<string, Subject>();
             courseGraph = new Graph();
+            completed = new List<Match>();
             Dictionary<String, int> coursesPlacedInto = new Dictionary<String, int>();//TODO: recieve this from taylors input thing
             coursesPlacedInto.Add("MATH", 141);
             coursesPlacedInto.Add("ENGL", 98);
@@ -35,6 +36,12 @@ namespace Project_Silver_LadyBug
             List<Course> toBeUpdated = new List<Course>();
             foreach (Match element in completed)
             {
+                Subject checkIfMadeProgress;
+                if (subjectRequirements.TryGetValue(element.departmentID, out checkIfMadeProgress)) {
+                    if (checkIfMadeProgress.reqCourses.ContainsKey(element.departmentID+element.numberID))
+                        requiredCourseCount -= 1;
+                }
+                
                 toBeUpdated.Add(new Course(element.departmentID, element.numberID));
                 courseGraph.updateCompleted(toBeUpdated);
             }
@@ -58,11 +65,12 @@ namespace Project_Silver_LadyBug
                 if(!(subjectRequirements.TryGetValue(readValue,out temp)))
                 {
                     subjectRequirements.Add(readValue, new Subject(readValue));
-
+                    requiredCourseCount += 1;
                     subjectRequirements[readValue].addCourse(reader.GetValue(0).ToString(), reader.GetValue(1).ToString());
                 }
                 else
                 {
+                    requiredCourseCount += 1;
                     temp.addCourse(reader.GetValue(0).ToString(), reader.GetValue(1).ToString());
                 }
             }
@@ -109,7 +117,7 @@ namespace Project_Silver_LadyBug
 
 
 
-        public int getImportanceRating(Course passed)
+        private int getImportanceRating(Course passed)
         {
             int importance = 0;
             Subject temp;
@@ -134,6 +142,15 @@ namespace Project_Silver_LadyBug
         }
 
 
+        public bool amIDone()
+        {
+            if (requiredCourseCount == 0)
+                return true;
+            else
+                return false;
+        }
+
+
         public static string program;
         /// <summary>
         /// Dictionary<string,Subject> stores the  major related subjects inside each subject is
@@ -141,6 +158,8 @@ namespace Project_Silver_LadyBug
         /// </summary>
         public Dictionary<string, Subject> subjectRequirements; 
         public Graph courseGraph;
+        private List<Match> completed;
+        private int requiredCourseCount;
 
     }
 }
