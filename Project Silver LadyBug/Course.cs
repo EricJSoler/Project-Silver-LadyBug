@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Project_Silver_LadyBug//We got a problem wiht naming a column external
+namespace Project_Silver_LadyBug
 {
   
 

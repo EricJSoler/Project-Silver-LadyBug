@@ -44,6 +44,7 @@
     <Compile Include="Course.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="GraphNode.cs" />
+    <Compile Include="InputInfo.cs" />
     <Compile Include="LocalGraphNode.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="Output.cs" />
@@ -58,8 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="LocationManager.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

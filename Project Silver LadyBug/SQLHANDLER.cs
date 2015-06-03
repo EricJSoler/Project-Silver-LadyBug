@@ -28,6 +28,7 @@ namespace Project_Silver_LadyBug
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                System.Environment.Exit(1);
             }
             myConnection2 = new SqlConnection("User ID = Algo;" + "Password = Alg0rithm; server = algo.database.windows.net;" + "database =Test_0506;"
    + "Connection Timeout = 30;"+"MultipleActiveResultSets=true;");
@@ -38,6 +39,7 @@ namespace Project_Silver_LadyBug
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                System.Environment.Exit(1);
             }
 
            
