@@ -4,6 +4,32 @@
     <termID>Fall</termID>
     <schedule>
       <Match>
+        <departmentID>ESL</departmentID>
+        <numberID>097</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>2</importance>
+      </Match>
+      <Match>
+        <departmentID>MATH</departmentID>
+        <numberID>079</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Evening</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>46</importance>
+      </Match>
+    </schedule>
+    <year>1</year>
+  </TermOutput>
+  <TermOutput>
+    <termID>Winter</termID>
+    <schedule>
+      <Match>
         <departmentID>ENGL</departmentID>
         <numberID>098</numberID>
         <sectionOptions>
@@ -11,26 +37,33 @@
             <sectionID>OnLine</sectionID>
           </Section>
         </sectionOptions>
-        <importance>7</importance>
+        <importance>8</importance>
       </Match>
       <Match>
-        <departmentID>MATH</departmentID>
-        <numberID>141</numberID>
+        <departmentID>IELP</departmentID>
+        <numberID>070</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Evening</sectionID>
           </Section>
+        </sectionOptions>
+        <importance>1</importance>
+      </Match>
+      <Match>
+        <departmentID>MATH</departmentID>
+        <numberID>080</numberID>
+        <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>56</importance>
+        <importance>46</importance>
       </Match>
     </schedule>
     <year>1</year>
   </TermOutput>
   <TermOutput>
-    <termID>Winter</termID>
+    <termID>Spring</termID>
     <schedule>
       <Match>
         <departmentID>ENGL</departmentID>
@@ -44,8 +77,14 @@
       </Match>
       <Match>
         <departmentID>MATH</departmentID>
-        <numberID>142</numberID>
+        <numberID>091</numberID>
         <sectionOptions>
+          <Section>
+            <sectionID>Afternoon</sectionID>
+          </Section>
+          <Section>
+            <sectionID>Arranged</sectionID>
+          </Section>
           <Section>
             <sectionID>Evening</sectionID>
           </Section>
@@ -53,7 +92,36 @@
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>59</importance>
+        <importance>46</importance>
+      </Match>
+    </schedule>
+    <year>1</year>
+  </TermOutput>
+  <TermOutput>
+    <termID>Fall</termID>
+    <schedule>
+      <Match>
+        <departmentID>MATH</departmentID>
+        <numberID>092</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Evening</sectionID>
+          </Section>
+          <Section>
+            <sectionID>OnLine</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>48</importance>
+      </Match>
+      <Match>
+        <departmentID>CHEM</departmentID>
+        <numberID>140</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>32</importance>
       </Match>
       <Match>
         <departmentID>ENGR</departmentID>
@@ -66,50 +134,63 @@
         <importance>1</importance>
       </Match>
     </schedule>
-    <year>1</year>
+    <year>2</year>
+  </TermOutput>
+  <TermOutput>
+    <termID>Winter</termID>
+    <schedule>
+      <Match>
+        <departmentID>MATH</departmentID>
+        <numberID>141</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Evening</sectionID>
+          </Section>
+          <Section>
+            <sectionID>OnLine</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>46</importance>
+      </Match>
+      <Match>
+        <departmentID>CHEM</departmentID>
+        <numberID>161</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>41</importance>
+      </Match>
+    </schedule>
+    <year>2</year>
   </TermOutput>
   <TermOutput>
     <termID>Spring</termID>
     <schedule>
       <Match>
         <departmentID>MATH</departmentID>
-        <numberID>151</numberID>
+        <numberID>142</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Afternoon</sectionID>
           </Section>
         </sectionOptions>
-        <importance>68</importance>
+        <importance>49</importance>
       </Match>
       <Match>
-        <departmentID>PHYS</departmentID>
-        <numberID>114</numberID>
-        <sectionOptions>
-          <Section>
-            <sectionID>Morning</sectionID>
-          </Section>
-        </sectionOptions>
-        <importance>22</importance>
-      </Match>
-    </schedule>
-    <year>1</year>
-  </TermOutput>
-  <TermOutput>
-    <termID>Fall</termID>
-    <schedule>
-      <Match>
-        <departmentID>MATH</departmentID>
-        <numberID>152</numberID>
+        <departmentID>CHEM</departmentID>
+        <numberID>162</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Evening</sectionID>
           </Section>
         </sectionOptions>
-        <importance>71</importance>
+        <importance>40</importance>
       </Match>
       <Match>
-        <departmentID>CHEM</departmentID>
-        <numberID>140</numberID>
+        <departmentID>ESL</departmentID>
+        <numberID>098</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
@@ -121,17 +202,43 @@
     <year>2</year>
   </TermOutput>
   <TermOutput>
-    <termID>Winter</termID>
+    <termID>Fall</termID>
     <schedule>
       <Match>
         <departmentID>MATH</departmentID>
-        <numberID>163</numberID>
+        <numberID>151</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>69</importance>
+        <importance>58</importance>
+      </Match>
+      <Match>
+        <departmentID>PHYS</departmentID>
+        <numberID>114</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Evening</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>22</importance>
+      </Match>
+    </schedule>
+    <year>3</year>
+  </TermOutput>
+  <TermOutput>
+    <termID>Winter</termID>
+    <schedule>
+      <Match>
+        <departmentID>MATH</departmentID>
+        <numberID>152</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>61</importance>
       </Match>
       <Match>
         <departmentID>PHYS</departmentID>
@@ -144,30 +251,30 @@
         <importance>32</importance>
       </Match>
     </schedule>
-    <year>2</year>
+    <year>3</year>
   </TermOutput>
   <TermOutput>
     <termID>Spring</termID>
     <schedule>
       <Match>
         <departmentID>MATH</departmentID>
-        <numberID>260</numberID>
-        <sectionOptions>
-          <Section>
-            <sectionID>Morning</sectionID>
-          </Section>
-        </sectionOptions>
-        <importance>65</importance>
-      </Match>
-      <Match>
-        <departmentID>MATH</departmentID>
-        <numberID>261</numberID>
+        <numberID>163</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Afternoon</sectionID>
           </Section>
         </sectionOptions>
-        <importance>65</importance>
+        <importance>59</importance>
+      </Match>
+      <Match>
+        <departmentID>ENGR</departmentID>
+        <numberID>214</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>12</importance>
       </Match>
       <Match>
         <departmentID>PHYS</departmentID>
@@ -180,71 +287,36 @@
         <importance>32</importance>
       </Match>
     </schedule>
-    <year>2</year>
+    <year>3</year>
   </TermOutput>
   <TermOutput>
     <termID>Fall</termID>
     <schedule>
       <Match>
-        <departmentID>CHEM</departmentID>
-        <numberID>161</numberID>
+        <departmentID>MATH</departmentID>
+        <numberID>260</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Evening</sectionID>
           </Section>
         </sectionOptions>
-        <importance>11</importance>
+        <importance>55</importance>
       </Match>
       <Match>
-        <departmentID>PHYS</departmentID>
-        <numberID>243</numberID>
+        <departmentID>MATH</departmentID>
+        <numberID>261</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>30</importance>
+        <importance>55</importance>
       </Match>
     </schedule>
-    <year>3</year>
+    <year>4</year>
   </TermOutput>
   <TermOutput>
     <termID>Winter</termID>
-    <schedule>
-      <Match>
-        <departmentID>CHEM</departmentID>
-        <numberID>162</numberID>
-        <sectionOptions>
-          <Section>
-            <sectionID>Evening</sectionID>
-          </Section>
-          <Section>
-            <sectionID>Morning</sectionID>
-          </Section>
-        </sectionOptions>
-        <importance>10</importance>
-      </Match>
-    </schedule>
-    <year>3</year>
-  </TermOutput>
-  <TermOutput>
-    <termID>Spring</termID>
-    <schedule>
-      <Match>
-        <departmentID>ENGR</departmentID>
-        <numberID>214</numberID>
-        <sectionOptions>
-          <Section>
-            <sectionID>Morning</sectionID>
-          </Section>
-        </sectionOptions>
-        <importance>12</importance>
-      </Match>
-    </schedule>
-    <year>3</year>
-  </TermOutput>
-  <TermOutput>
-    <termID>Fall</termID>
     <schedule>
       <Match>
         <departmentID>ENGR</departmentID>
@@ -257,9 +329,28 @@
         <importance>10</importance>
       </Match>
       <Match>
+        <departmentID>PHYS</departmentID>
+        <numberID>243</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Morning</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>30</importance>
+      </Match>
+    </schedule>
+    <year>4</year>
+  </TermOutput>
+  <TermOutput>
+    <termID>Spring</termID>
+    <schedule>
+      <Match>
         <departmentID>ENGR</departmentID>
         <numberID>225</numberID>
         <sectionOptions>
+          <Section>
+            <sectionID>Afternoon</sectionID>
+          </Section>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>

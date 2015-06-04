@@ -23,9 +23,9 @@ namespace Project_Silver_LadyBug
             courseGraph = new Graph();
             completed = new List<Match>();
             Dictionary<String, int> coursesPlacedInto = new Dictionary<String, int>();//TODO: recieve this from taylors input thing
-            coursesPlacedInto.Add("MATH", 141);
-            coursesPlacedInto.Add("ENGL", 98);
-            coursesPlacedInto.Add("CS", 131);
+           // coursesPlacedInto.Add("MATH", 141);
+           // coursesPlacedInto.Add("ENGL", 98);
+          //  coursesPlacedInto.Add("CS", 131);
             courseGraph.coursesPlacedInto = coursesPlacedInto;
             findDepartments();
 
@@ -132,7 +132,10 @@ namespace Project_Silver_LadyBug
             switch (passed.departmentID)
             {
                 case "MATH":
-                    importance += 55;
+                    importance += 45;
+                    break;
+                case "CHEM":
+                    importance += 30;
                     break;
                 case "PHYS":
                     importance += 20;
