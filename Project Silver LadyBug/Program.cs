@@ -13,6 +13,10 @@ namespace Project_Silver_LadyBug
 
     /// <summary>
     /// The flow of this program will be recieve a degree, quarter of enrollment and
+    /// then build a graph for it within the pre req filter the pre req filter will then 
+    /// send courses the student is qualified for to the time filter which will filter our courses
+    /// based on time and impoartance. the time filter will then send what courses have been 
+    /// succesfully recomended to the pre req filter so the pre req filter can update its graph
     /// </summary>
     public class Program
     {

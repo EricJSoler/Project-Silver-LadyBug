@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project_Silver_LadyBug
 {
+    /// <summary>
+    /// Local graph node has a list of graph nodes this class is only used inside of the build
+    /// function within Graph to find all the paths from pre reqs so it can then be transformed 
+    /// into the format needed for the graph
+    /// </summary>
     public class LocalGraphNode
     {
         public LocalGraphNode()

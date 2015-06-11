@@ -10,8 +10,10 @@ using System.IO;
 namespace Project_Silver_LadyBug
 {
     /// <summary>
-    /// This is the module currently being worked on and needs to build an object made up of 
-    /// courses that a student is qualified for
+    ///This is the main module for ordering pre-reqs it builds a graph of the pre-reqs
+    ///for a given major and returns courses that are qualified for and receives which courses
+    ///have been completed and updates the graph. It also calculates the important of a course before
+    ///returning it
     /// </summary>
     public class PreReq
     {

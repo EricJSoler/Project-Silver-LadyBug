@@ -9,6 +9,10 @@ using System.IO;
 
 namespace Project_Silver_LadyBug
 {
+    /// <summary>
+    /// Output class recieves courses that were recomended form the time filter and puts them
+    /// into a structure containing the information needed to output them into xml form
+    /// </summary>
     public class Output
     {
         public Output()

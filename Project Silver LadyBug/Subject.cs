@@ -9,6 +9,11 @@ using System.IO;
 
 namespace Project_Silver_LadyBug
 {
+    /// <summary>
+    /// The subject class allows for courses from the same department to be organized better
+    /// and each subject contains a list of all the courses that are required for the degree
+    /// in that department
+    /// </summary>
     public class Subject
     {
         public Subject()
