@@ -82,14 +82,24 @@
         <importance>68</importance>
       </Match>
       <Match>
-        <departmentID>PHYS</departmentID>
-        <numberID>114</numberID>
+        <departmentID>CHEM</departmentID>
+        <numberID>140</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>22</importance>
+        <importance>1</importance>
+      </Match>
+      <Match>
+        <departmentID>ESL</departmentID>
+        <numberID>097</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Evening</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>1</importance>
       </Match>
     </schedule>
     <year>1</year>
@@ -108,14 +118,14 @@
         <importance>71</importance>
       </Match>
       <Match>
-        <departmentID>CHEM</departmentID>
-        <numberID>140</numberID>
+        <departmentID>PHYS</departmentID>
+        <numberID>114</numberID>
         <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>1</importance>
+        <importance>22</importance>
       </Match>
     </schedule>
     <year>2</year>
@@ -218,11 +228,18 @@
           <Section>
             <sectionID>Evening</sectionID>
           </Section>
+        </sectionOptions>
+        <importance>10</importance>
+      </Match>
+      <Match>
+        <departmentID>ESL</departmentID>
+        <numberID>098</numberID>
+        <sectionOptions>
           <Section>
             <sectionID>Morning</sectionID>
           </Section>
         </sectionOptions>
-        <importance>10</importance>
+        <importance>1</importance>
       </Match>
     </schedule>
     <year>3</year>
@@ -239,6 +256,16 @@
           </Section>
         </sectionOptions>
         <importance>12</importance>
+      </Match>
+      <Match>
+        <departmentID>IELP</departmentID>
+        <numberID>070</numberID>
+        <sectionOptions>
+          <Section>
+            <sectionID>Afternoon</sectionID>
+          </Section>
+        </sectionOptions>
+        <importance>1</importance>
       </Match>
     </schedule>
     <year>3</year>

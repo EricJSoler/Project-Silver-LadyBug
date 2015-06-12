@@ -20,12 +20,12 @@ namespace Project_Silver_LadyBug
         {
 
             
-            StreamReader inputReader = new StreamReader(@"C:\Users\ejsoler\Desktop\Project-Silver-LadyBug\Project Silver LadyBug\LocationManager.config");
+           // StreamReader inputReader = new StreamReader(@"C:\Users\ejsoler\Desktop\Project-Silver-LadyBug\Project Silver LadyBug\LocationManager.config");
             String line;
-            while((line = inputReader.ReadLine()) != null)
-            {
-                String[] stuff = line.Split(' ');
-            }
+            //while((line = inputReader.ReadLine()) != null)
+            //{
+             //   String[] stuff = line.Split(' ');
+            //}
 
             try
             {
@@ -35,11 +35,10 @@ namespace Project_Silver_LadyBug
                 quarter.Add("Spring");
                 SQLHANDLER.start();
                 Output final = new Output();
-                Console.WriteLine("Enter File Path To XML input");
-                string filePath = Console.ReadLine();
-                //PreReq pre = new PreReq();
-                PreReq pre = new PreReq(filePath);
-                //Graph graph = new Graph();
+                //Console.WriteLine("Enter File Path To XML input");
+                //string filePath = Console.ReadLine();
+                PreReq pre = new PreReq();
+                //PreReq pre = new PreReq(filePath);
                 List<List<Match>> all = new List<List<Match>>();
                 List<Course> qual;
                 string x;

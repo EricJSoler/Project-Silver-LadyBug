@@ -22,9 +22,11 @@ namespace Project_Silver_LadyBug
             subjectRequirements = new Dictionary<string, Subject>();
             courseGraph = new Graph();
             completed = new List<Match>();
-            info = new InputInfo(@"C:\Users\ejsoler\Desktop\InputConfig.xml");
+            //info = new InputInfo(@"C:\Users\ejsoler\Desktop\InputConfig.xml");
             Dictionary<String, int> coursesPlacedInto = new Dictionary<String, int>();//TODO: recieve this from taylors input thing
-            courseGraph.coursesPlacedInto = coursesPlacedInto = info.placement;
+            coursesPlacedInto.Add("MATH", 141);
+            coursesPlacedInto.Add("ENGL", 98);
+            courseGraph.coursesPlacedInto = coursesPlacedInto;
             findDepartments();
         }
         public PreReq(string filePath)
